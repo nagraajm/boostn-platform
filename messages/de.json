@@ -1,0 +1,174 @@
+{
+  "navigation": {
+    "packages": "Pakete",
+    "donate": "Spenden",
+    "about": "Über uns",
+    "team": "Team",
+    "news": "Neuigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Unterstütze {clubName}",
+    "subtitle": "Hilf uns dabei, unsere Ziele zu erreichen und einen Unterschied in unserer Gemeinschaft zu machen. Jeder Beitrag zählt.",
+    "liveStatus": "Aktive Fundraising-Kampagne",
+    "explorePackages": "Pakete entdecken",
+    "quickDonate": "Schnell spenden",
+    "progress": "Kampagnen-Fortschritt",
+    "raised": "gesammelt",
+    "goal": "Ziel"
+  },
+  "packages": {
+    "title": "Sponsoring-Pakete",
+    "subtitle": "Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Königsberg und gewinne wertvolle Präsenz für dein Unternehmen.",
+    "classic": {
+      "name": "CLASSIC",
+      "price": "Ab €229 + MwSt.",
+      "tickets": "6 Stehplatz-Tageskarten",
+      "benefits": {
+        "companyMention": false,
+        "network": "Unternehmer-Netzwerk",
+        "logo": "Supporterclub-Logo",
+        "partnerCard": "Partner-Karte (1 Karte)",
+        "spobunetLogo": "spobunet Logo-Präsentation"
+      }
+    },
+    "bronze": {
+      "name": "BRONZE", 
+      "price": "Nicht spezifiziert",
+      "tickets": "30 Stehplatz-Tageskarten",
+      "benefits": {
+        "companyMention": "Firmen-Nennung",
+        "network": "Unternehmer-Netzwerk", 
+        "logo": "Supporterclub-Logo",
+        "partnerCard": "Partner-Karte (1 Karte)",
+        "spobunetLogo": "spobunet Logo-Präsentation"
+      }
+    },
+    "silver": {
+      "name": "SILBER",
+      "price": "Nicht spezifiziert", 
+      "tickets": "2 Stehplatz-Saisonkarten",
+      "benefits": {
+        "companyMention": "Firmen-Nennung",
+        "network": "Unternehmer-Netzwerk",
+        "logo": "Supporterclub-Logo", 
+        "partnerCard": "Partner-Karte (1 Karte)",
+        "spobunetPresentation": "spobunet Firmen-Präsentation + Logo"
+      }
+    },
+    "gold": {
+      "name": "GOLD",
+      "price": "Nicht spezifiziert",
+      "tickets": "2 Sitzplatz-Saisonkarten", 
+      "benefits": {
+        "companyMention": "Firmen-Nennung",
+        "network": "Unternehmer-Netzwerk",
+        "logo": "Supporterclub-Logo",
+        "partnerCard": "Partner-Karte (1 Karte)", 
+        "spobunetPresentation": "spobunet Firmen-Präsentation + Logo"
+      }
+    },
+    "payment": "Einmalig pro Saison",
+    "selectPackage": "Paket auswählen",
+    "soldOut": "Ausverkauft",
+    "customPackage": "Suchst du eine individuelle Sponsoring-Lösung?",
+    "contactUs": "Kontaktiere uns für personalisierte Pakete",
+    "ticketBenefits": "🎫 Ticket-Vorteile",
+    "businessBenefits": "🏢 Business-Vorteile",
+    "terms": "📝 Wichtige Bedingungen & Vorteile",
+    "commonBenefits": {
+      "title": "Gemeinsame Vorteile aller Pakete:",
+      "items": [
+        "Zugang zu Unternehmer-Netzwerk-Veranstaltungen",
+        "Nutzungsrechte des Supporterclub-Logos", 
+        "Partner-Karte für Business-Networking",
+        "Zugang zum Sport-Business-Netzwerk (spobunet.de)",
+        "Newsletter-Updates und Mitgliederangebote",
+        "Mindestens eine kostenlose Supporterclub-Meeting-Einladung"
+      ]
+    },
+    "importantNotes": {
+      "title": "Wichtige Hinweise:",
+      "items": [
+        "Alle Tageskarten vorbehaltlich Verfügbarkeit",
+        "Nur für reguläre Saison-Heimspiele (keine Playoffs)",
+        "Upgrade auf höheres Paket während der Saison möglich", 
+        "Preise exklusive 19% MwSt.",
+        "Automatische Verlängerung für nächste Saison (8-Wochen-Kündigungsfrist erforderlich)",
+        "Keine Werbung mit Augsburger Panther Name/Logo ohne Genehmigung"
+      ]
+    }
+  },
+  "donation": {
+    "title": "Unterstütze unseren Verein",
+    "subtitle": "Mache eine direkte Spende zur Unterstützung der Aktivitäten, Ausrüstung und Jugendprogramme des EHC Königsberg. Jeder Beitrag macht einen Unterschied!",
+    "quickDonation": "⚡ Schnellspende",
+    "quickDonationDesc": "Mache eine schnelle Spende mit einem Klick",
+    "customAmount": "Individueller Betrag (€)",
+    "enterAmount": "Betrag eingeben",
+    "donate": "Spenden",
+    "thankYou": "Danke für deine Spende! 🎉",
+    "impact": {
+      "title": "❤️ Deine Wirkung",
+      "subtitle": "Sieh, wie deine Spende unserem Verein hilft",
+      "training": "€25 - Trainingsausrüstung",
+      "trainingDesc": "Hilft beim Kauf von Trainingshütchen, Pucks und Übungsausrüstung",
+      "youth": "€50 - Jugendprogramm", 
+      "youthDesc": "Unterstützt unsere Jugendentwicklung und Trainingsprogramme",
+      "team": "€100 - Team-Unterstützung",
+      "teamDesc": "Deckt Teamverpflegung, Transport und Turniergebühren ab",
+      "facility": "€250 - Anlagenverbesserung",
+      "facilityDesc": "Trägt zur Eisbahn-Wartung und Anlagen-Upgrades bei"
+    },
+    "monthlySupporter": "Werde monatlicher Unterstützer"
+  },
+  "stats": {
+    "members": "Aktive Mitglieder",
+    "championships": "Gewonnene Meisterschaften", 
+    "goals": "Tore diese Saison",
+    "fundsRaised": "Gesammelte Gelder"
+  },
+  "footer": {
+    "description": "Unterstützung der Eishockey-Exzellenz in Königsberg seit 1952. Wir bauen Champions auf und neben dem Eis.",
+    "madeWith": "Mit Leidenschaft für Eishockey gemacht",
+    "contact": "Kontakt",
+    "quickLinks": "Schnelllinks",
+    "followUs": "Folge uns",
+    "stayUpdated": "Bleibe auf dem Laufenden mit unseren neuesten Nachrichten",
+    "updates": "Spielpläne • Training-Updates • Veranstaltungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen", 
+    "imprint": "Impressum"
+  },
+  "social": {
+    "shareTitle": "Teile diese Kampagne",
+    "shareDesc": "Hilf uns, mehr Unterstützer zu erreichen, indem du unsere Kampagne in sozialen Medien teilst",
+    "shareOn": "Teilen auf {platform}",
+    "copyLink": "Oder kopiere den Link:",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "shareHelp": "Jedes Teilen hilft uns, potenzielle Sponsoren und Unterstützer zu erreichen! 🙌"
+  },
+  "form": {
+    "businessName": "Firmenname *",
+    "contactPerson": "Ansprechpartner *", 
+    "email": "E-Mail-Adresse *",
+    "phone": "Telefonnummer",
+    "companyRegistration": "Firmenregistrierung",
+    "paymentMethod": "Zahlungsmethode",
+    "creditCard": "Kreditkarte",
+    "bankTransfer": "Überweisung",
+    "submit": "Kauf abschließen",
+    "processing": "Wird verarbeitet..."
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
+  }
+}

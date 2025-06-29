@@ -1,0 +1,174 @@
+{
+  "navigation": {
+    "packages": "Packages",
+    "donate": "Donate",
+    "about": "About Us",
+    "team": "Team",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Support {clubName}",
+    "subtitle": "Help us reach our goals and make a difference in our community. Every contribution matters.",
+    "liveStatus": "Live Fundraising Campaign",
+    "explorePackages": "Explore Packages",
+    "quickDonate": "Quick Donate",
+    "progress": "Campaign Progress",
+    "raised": "raised",
+    "goal": "goal"
+  },
+  "packages": {
+    "title": "Sponsorship Packages",
+    "subtitle": "Choose the perfect sponsorship package to support EHC Königsberg and gain valuable exposure for your business.",
+    "classic": {
+      "name": "CLASSIC",
+      "price": "Starting from €229 + VAT",
+      "tickets": "6 Standing Day Tickets",
+      "benefits": {
+        "companyMention": false,
+        "network": "Entrepreneur Network",
+        "logo": "Supporterclub Logo",
+        "partnerCard": "Partner Card (1 card)",
+        "spobunetLogo": "spobunet Logo Presentation"
+      }
+    },
+    "bronze": {
+      "name": "BRONZE", 
+      "price": "Not specified",
+      "tickets": "30 Standing Day Tickets",
+      "benefits": {
+        "companyMention": "Company Name Mention",
+        "network": "Entrepreneur Network", 
+        "logo": "Supporterclub Logo",
+        "partnerCard": "Partner Card (1 card)",
+        "spobunetLogo": "spobunet Logo Presentation"
+      }
+    },
+    "silver": {
+      "name": "SILBER",
+      "price": "Not specified", 
+      "tickets": "2 Standing Season Tickets",
+      "benefits": {
+        "companyMention": "Company Name Mention",
+        "network": "Entrepreneur Network",
+        "logo": "Supporterclub Logo", 
+        "partnerCard": "Partner Card (1 card)",
+        "spobunetPresentation": "spobunet Company Presentation + Logo"
+      }
+    },
+    "gold": {
+      "name": "GOLD",
+      "price": "Not specified",
+      "tickets": "2 Seated Season Tickets", 
+      "benefits": {
+        "companyMention": "Company Name Mention",
+        "network": "Entrepreneur Network",
+        "logo": "Supporterclub Logo",
+        "partnerCard": "Partner Card (1 card)", 
+        "spobunetPresentation": "spobunet Company Presentation + Logo"
+      }
+    },
+    "payment": "One-time per season",
+    "selectPackage": "Select Package",
+    "soldOut": "Sold Out",
+    "customPackage": "Looking for a custom sponsorship solution?",
+    "contactUs": "Contact us for personalized packages",
+    "ticketBenefits": "🎫 Ticket Benefits",
+    "businessBenefits": "🏢 Business Benefits",
+    "terms": "📝 Key Terms & Benefits",
+    "commonBenefits": {
+      "title": "Common Benefits for All Packages:",
+      "items": [
+        "Access to entrepreneur network events",
+        "Supporterclub logo usage rights", 
+        "Partner card for business networking",
+        "Access to sport-business network (spobunet.de)",
+        "Newsletter updates and member offers",
+        "At least one free Supporterclub meeting invitation"
+      ]
+    },
+    "importantNotes": {
+      "title": "Important Notes:",
+      "items": [
+        "All day tickets subject to availability",
+        "Only for regular season home games (no playoffs)",
+        "Upgrade to higher package possible during season", 
+        "Prices exclude 19% VAT",
+        "Automatic renewal for next season (8-week cancellation notice required)",
+        "No advertising with Augsburger Panther name/logo without permission"
+      ]
+    }
+  },
+  "donation": {
+    "title": "Support Our Club",
+    "subtitle": "Make a direct donation to support EHC Königsberg's activities, equipment, and youth programs. Every contribution makes a difference!",
+    "quickDonation": "⚡ Quick Donation",
+    "quickDonationDesc": "Make a fast donation with one click",
+    "customAmount": "Custom Amount (€)",
+    "enterAmount": "Enter amount",
+    "donate": "Donate",
+    "thankYou": "Thank you for your donation! 🎉",
+    "impact": {
+      "title": "❤️ Your Impact",
+      "subtitle": "See how your donation helps our club",
+      "training": "€25 - Training Equipment",
+      "trainingDesc": "Helps purchase training cones, pucks, and practice gear",
+      "youth": "€50 - Youth Program", 
+      "youthDesc": "Supports our youth development and coaching programs",
+      "team": "€100 - Team Support",
+      "teamDesc": "Covers team meals, transportation, and tournament fees",
+      "facility": "€250 - Facility Improvement",
+      "facilityDesc": "Contributes to rink maintenance and facility upgrades"
+    },
+    "monthlySupporter": "Become a Monthly Supporter"
+  },
+  "stats": {
+    "members": "Active Members",
+    "championships": "Championships Won", 
+    "goals": "Goals This Season",
+    "fundsRaised": "Funds Raised"
+  },
+  "footer": {
+    "description": "Supporting ice hockey excellence in Königsberg since 1952. Building champions on and off the ice.",
+    "madeWith": "Made with passion for hockey",
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "stayUpdated": "Stay updated with our latest news",
+    "updates": "Game schedules • Training updates • Events",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service", 
+    "imprint": "Imprint"
+  },
+  "social": {
+    "shareTitle": "Share This Campaign",
+    "shareDesc": "Help us reach more supporters by sharing our campaign on social media",
+    "shareOn": "Share on {platform}",
+    "copyLink": "Or copy the link:",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "shareHelp": "Every share helps us reach potential sponsors and supporters! 🙌"
+  },
+  "form": {
+    "businessName": "Business Name *",
+    "contactPerson": "Contact Person *", 
+    "email": "Email Address *",
+    "phone": "Phone Number",
+    "companyRegistration": "Company Registration",
+    "paymentMethod": "Payment Method",
+    "creditCard": "Credit Card",
+    "bankTransfer": "Bank Transfer",
+    "submit": "Complete Purchase",
+    "processing": "Processing..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
