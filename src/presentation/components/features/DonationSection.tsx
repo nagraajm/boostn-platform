@@ -71,7 +71,7 @@ export function DonationSection() {
             Support Our Club
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto text-shadow">
-            Make a direct donation to support EHC Königsberg's activities, 
+            Make a direct donation to support EHC Koenigsbrunn's activities, 
             equipment, and youth programs. Every contribution makes a difference!
           </p>
         </motion.div>

@@ -192,7 +192,7 @@ export function PackagePurchaseForm({ package: pkg, isOpen, onClose }: PackagePu
               animate={{ opacity: 1, y: 0 }}
               className="p-3 text-sm text-green-600 bg-green-50 border border-green-200 rounded-lg"
             >
-              🎉 Sponsorship purchased successfully! Thank you for supporting EHC Königsberg.
+              🎉 Sponsorship purchased successfully! Thank you for supporting EHC Koenigsbrunn.
             </motion.div>
           )}
 

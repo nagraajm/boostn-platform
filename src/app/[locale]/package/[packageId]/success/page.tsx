@@ -59,7 +59,7 @@ export default function SuccessPage() {
   const packages = {
     classic: { name: 'CLASSIC' },
     bronze: { name: 'BRONZE' },
-    silver: { name: 'SILBER' },
+    silver: { name: 'SILVER' },
     gold: { name: 'GOLD' }
   };
 
@@ -73,7 +73,7 @@ export default function SuccessPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-white">EHC Königsberg</h1>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-blue-300 to-blue-100 text-blue-900 py-1 px-3 rounded-md">EHC Koenigsbrunn</h1>
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex space-x-2">
@@ -98,85 +98,87 @@ export default function SuccessPage() {
       </nav>
 
       {/* Success Content */}
-      <section className="pt-32 py-20">
+      <section className="pt-32 py-20 bg-blue-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h1 className="text-4xl font-bold text-white mb-4 gradient-text">
-                {t.title}
-              </h1>
-              <p className="text-xl text-gray-300">
-                {pkg?.name} Package
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            {/* Success Message */}
-            <Card className="p-8 text-center">
-              <CardContent>
-                <h2 className="text-2xl font-bold text-white mb-4">{t.thankYou}</h2>
-                <p className="text-gray-300 mb-4">{t.success}</p>
-                <p className="text-gray-400">{t.receiptSent}</p>
-              </CardContent>
-            </Card>
-
-            {/* Next Steps */}
-            <Card className="p-8">
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold text-white">{t.whatNext}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {t.steps.map((step: string, index: number) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                        <span className="text-white font-bold text-sm">{index + 1}</span>
-                      </div>
-                      <p className="text-gray-300">{step}</p>
-                    </div>
-                  ))}
+          <div className="glass-card p-6 bg-blue-800 bg-opacity-90 border border-blue-700">
+            <div className="text-center mb-12">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
-              </CardContent>
-            </Card>
+                <h1 className="text-4xl font-bold text-white mb-4 gradient-text">
+                  {t.title}
+                </h1>
+                <p className="text-xl text-blue-200 font-semibold bg-blue-800/50 py-1 px-3 rounded-md inline-block">
+                  {pkg?.name} Package
+                </p>
+              </div>
+            </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                variant="primary"
-                size="lg"
-                onClick={() => router.push(`/${locale}`)}
-              >
-                {t.backToHome}
-              </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                onClick={() => {
-                  // Simulate receipt download
-                  const link = document.createElement('a');
-                  link.href = '#';
-                  link.download = `receipt-${packageId}-${Date.now()}.pdf`;
-                  link.click();
-                }}
-              >
-                {t.downloadReceipt}
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => {
-                  // Open contact form or navigate to contact page
-                  window.location.href = 'mailto:info@ehc-koenigsberg.de';
-                }}
-              >
-                {t.contactUs}
-              </Button>
+            <div className="space-y-8">
+              {/* Success Message */}
+              <Card className="p-8 text-center">
+                <CardContent>
+                  <h2 className="text-2xl font-bold text-blue-900 mb-4 bg-blue-100 py-2 px-4 rounded-md inline-block">{t.thankYou}</h2>
+                  <p className="text-blue-800 mb-4">{t.success}</p>
+                  <p className="text-blue-700">{t.receiptSent}</p>
+                </CardContent>
+              </Card>
+
+              {/* Next Steps */}
+              <Card className="p-8">
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold text-blue-900 bg-blue-100 py-2 px-4 rounded-md inline-block">{t.whatNext}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    {t.steps.map((step: string, index: number) => (
+                      <div key={index} className="flex items-start">
+                        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                          <span className="text-white font-bold text-sm">{index + 1}</span>
+                        </div>
+                        <p className="text-blue-800">{step}</p>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  onClick={() => router.push(`/${locale}`)}
+                >
+                  {t.backToHome}
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  onClick={() => {
+                    // Simulate receipt download
+                    const link = document.createElement('a');
+                    link.href = '#';
+                    link.download = `receipt-${packageId}-${Date.now()}.pdf`;
+                    link.click();
+                  }}
+                >
+                  {t.downloadReceipt}
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => {
+                    // Open contact form or navigate to contact page
+                    window.location.href = 'mailto:info@ehc-koenigsberg.de';
+                  }}
+                >
+                  {t.contactUs}
+                </Button>
+              </div>
             </div>
           </div>
         </div>

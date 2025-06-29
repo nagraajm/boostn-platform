@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Footer from '@/presentation/components/Footer';
 import '../globals.css';
 
 export default function LocaleLayout({
@@ -8,7 +9,7 @@ export default function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: {locale: string};
 }) {
   const [particles, setParticles] = useState<Array<{
     left: string;
@@ -31,7 +32,7 @@ export default function LocaleLayout({
   }, []);
 
   return (
-    <div className="min-h-screen text-gray-800">
+    <div className="min-h-screen text-gray-800 flex flex-col">
       <div className="particles-bg">
         {/* Floating particles for background effect */}
         {particles.map((particle, i) => (
@@ -48,7 +49,10 @@ export default function LocaleLayout({
           />
         ))}
       </div>
-      {children}
+      <div className="flex-grow mb-0">
+        {children}
+      </div>
+      <Footer />
     </div>
   );
 }

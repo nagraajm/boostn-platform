@@ -20,7 +20,7 @@ export default function PackagesPage() {
   const content = {
     en: {
       title: 'Sponsorship Packages',
-      subtitle: 'Choose the perfect sponsorship package to support EHC Königsberg and gain valuable exposure for your business.',
+      subtitle: 'Choose the perfect sponsorship package to support EHC Koenigsbrunn and gain valuable exposure for your business.',
       backToHome: 'Back to Home',
       selectPackage: 'Select Package',
       ticketBenefits: '🎫 Ticket Benefits',
@@ -31,7 +31,7 @@ export default function PackagesPage() {
     },
     de: {
       title: 'Sponsoring-Pakete',
-      subtitle: 'Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Königsberg und gewinne wertvolle Präsenz für dein Unternehmen.',
+      subtitle: 'Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Koenigsbrunn und gewinne wertvolle Präsenz für dein Unternehmen.',
       backToHome: 'Zurück zur Startseite',
       selectPackage: 'Paket auswählen',
       ticketBenefits: '🎫 Ticket-Vorteile',
@@ -78,7 +78,7 @@ export default function PackagesPage() {
       }
     },
     silver: {
-      name: 'SILBER',
+      name: 'SILVER',
       price: 'Contact for pricing',
       priceDE: 'Preis auf Anfrage',
       tickets: '2 Standing Season Tickets',
@@ -126,7 +126,7 @@ export default function PackagesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-gray-800">EHC Königsberg</h1>
+              <h1 className="text-xl font-bold text-gray-800">EHC Koenigsbrunn</h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button

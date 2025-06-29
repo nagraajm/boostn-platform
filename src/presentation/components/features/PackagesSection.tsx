@@ -51,7 +51,7 @@ export function PackagesSection() {
             Sponsorship Packages
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto text-shadow">
-            Choose the perfect sponsorship package to support EHC Königsberg 
+            Choose the perfect sponsorship package to support EHC Koenigsbrunn 
             and gain valuable exposure for your business.
           </p>
         </motion.div>

@@ -19,7 +19,7 @@
   },
   "packages": {
     "title": "Sponsoring-Pakete",
-    "subtitle": "Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Königsberg und gewinne wertvolle Präsenz für dein Unternehmen.",
+    "subtitle": "Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Koenigsbrunn und gewinne wertvolle Präsenz für dein Unternehmen.",
     "classic": {
       "name": "CLASSIC",
       "price": "Ab €229 + MwSt.",
@@ -45,7 +45,7 @@
       }
     },
     "silver": {
-      "name": "SILBER",
+      "name": "SILVER",
       "price": "Nicht spezifiziert", 
       "tickets": "2 Stehplatz-Saisonkarten",
       "benefits": {
@@ -101,7 +101,7 @@
   },
   "donation": {
     "title": "Unterstütze unseren Verein",
-    "subtitle": "Mache eine direkte Spende zur Unterstützung der Aktivitäten, Ausrüstung und Jugendprogramme des EHC Königsberg. Jeder Beitrag macht einen Unterschied!",
+    "subtitle": "Mache eine direkte Spende zur Unterstützung der Aktivitäten, Ausrüstung und Jugendprogramme des EHC Koenigsbrunn. Jeder Beitrag macht einen Unterschied!",
     "quickDonation": "⚡ Schnellspende",
     "quickDonationDesc": "Mache eine schnelle Spende mit einem Klick",
     "customAmount": "Individueller Betrag (€)",
@@ -129,7 +129,7 @@
     "fundsRaised": "Gesammelte Gelder"
   },
   "footer": {
-    "description": "Unterstützung der Eishockey-Exzellenz in Königsberg seit 1952. Wir bauen Champions auf und neben dem Eis.",
+    "description": "Unterstützung der Eishockey-Exzellenz in Koenigsbrunn seit 1952. Wir bauen Champions auf und neben dem Eis.",
     "madeWith": "Mit Leidenschaft für Eishockey gemacht",
     "contact": "Kontakt",
     "quickLinks": "Schnelllinks",

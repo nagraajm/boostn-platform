@@ -19,7 +19,7 @@
   },
   "packages": {
     "title": "Sponsorship Packages",
-    "subtitle": "Choose the perfect sponsorship package to support EHC Königsberg and gain valuable exposure for your business.",
+    "subtitle": "Choose the perfect sponsorship package to support EHC Koenigsbrunn and gain valuable exposure for your business.",
     "classic": {
       "name": "CLASSIC",
       "price": "Starting from €229 + VAT",
@@ -45,7 +45,7 @@
       }
     },
     "silver": {
-      "name": "SILBER",
+      "name": "SILVER",
       "price": "Not specified", 
       "tickets": "2 Standing Season Tickets",
       "benefits": {
@@ -101,7 +101,7 @@
   },
   "donation": {
     "title": "Support Our Club",
-    "subtitle": "Make a direct donation to support EHC Königsberg's activities, equipment, and youth programs. Every contribution makes a difference!",
+    "subtitle": "Make a direct donation to support EHC Koenigsbrunn's activities, equipment, and youth programs. Every contribution makes a difference!",
     "quickDonation": "⚡ Quick Donation",
     "quickDonationDesc": "Make a fast donation with one click",
     "customAmount": "Custom Amount (€)",
@@ -129,7 +129,7 @@
     "fundsRaised": "Funds Raised"
   },
   "footer": {
-    "description": "Supporting ice hockey excellence in Königsberg since 1952. Building champions on and off the ice.",
+    "description": "Supporting ice hockey excellence in Koenigsbrunn since 1952. Building champions on and off the ice.",
     "madeWith": "Made with passion for hockey",
     "contact": "Contact",
     "quickLinks": "Quick Links",

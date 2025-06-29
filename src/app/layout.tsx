@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Boostn - EHC Königsberg | Crowdfunding Platform",
-  description: "Support EHC Königsberg through sponsorship packages and donations. Help our ice hockey club achieve excellence on and off the ice.",
-  keywords: "EHC Königsberg, ice hockey, sponsorship, crowdfunding, donations, sports club",
+  title: "Boostn - EHC Koenigsbrunn | Crowdfunding Platform",
+  description: "Support EHC Koenigsbrunn through sponsorship packages and donations. Help our ice hockey club achieve excellence on and off the ice.",
+  keywords: "EHC Koenigsbrunn, ice hockey, sponsorship, crowdfunding, donations, sports club",
 };
 
 export default function RootLayout({

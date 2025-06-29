@@ -17,9 +17,9 @@ export function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-bold mb-4 text-white text-shadow">EHC Königsberg</h3>
+            <h3 className="text-xl font-bold mb-4 text-white text-shadow">EHC Koenigsbrunn</h3>
             <p className="text-gray-200 mb-4 text-shadow">
-              Supporting ice hockey excellence in Königsberg since 1952. 
+              Supporting ice hockey excellence in Koenigsbrunn since 1952. 
               Building champions on and off the ice.
             </p>
             <div className="flex items-center gap-2 text-red-400">
@@ -39,8 +39,8 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-blue-400" />
                 <span className="text-gray-200 text-sm">
-                  Eisstadion Königsberg<br />
-                  Sportstraße 15, 39104 Königsberg
+                  Eisstadion Koenigsbrunn<br />
+                  Sportstraße 15, 39104 Koenigsbrunn
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -123,7 +123,7 @@ export function Footer() {
           className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <div className="text-gray-300 text-sm mb-4 md:mb-0">
-            © {currentYear} EHC Königsberg. All rights reserved.
+            © {currentYear} EHC Koenigsbrunn. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
             <a href="#" className="hover:text-white transition-colors">

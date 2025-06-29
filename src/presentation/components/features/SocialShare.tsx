@@ -14,7 +14,7 @@ interface SocialShareProps {
 
 export function SocialShare({ 
   url,
-  title = "Support EHC Königsberg",
+  title = "Support EHC Koenigsbrunn",
   description = "Help our ice hockey club achieve excellence through sponsorship and donations"
 }: SocialShareProps) {
   const [isOpen, setIsOpen] = useState(false)

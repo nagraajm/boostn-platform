@@ -2,9 +2,9 @@
 
 A modern Next.js 14 crowdfunding platform designed to help sports clubs raise funds through sponsorship packages and donations. Built with Clean Architecture principles, TypeScript, and a professional light theme design.
 
-## 🏒 About EHC Königsberg
+## 🏒 About EHC Koenigsbrunn
 
-This platform is specifically designed for EHC Königsberg, a sports club that offers various sponsorship packages to businesses and individuals looking to support the team while gaining valuable exposure and networking opportunities.
+This platform is specifically designed for EHC Koenigsbrunn, a sports club that offers various sponsorship packages to businesses and individuals looking to support the team while gaining valuable exposure and networking opportunities.
 
 ## ✨ Features
 
@@ -239,11 +239,11 @@ For technical support or business inquiries:
 
 ## 📄 License
 
-This project is proprietary software developed for EHC Königsberg.
+This project is proprietary software developed for EHC Koenigsbrunn.
 
 ---
 
-**Built with ❤️ for EHC Königsberg**
+**Built with ❤️ for EHC Koenigsbrunn**
 
 *Professional crowdfunding platform designed to connect businesses with sports excellence.*
 - **State Management**: React hooks with MVVM pattern
@@ -499,7 +499,7 @@ npm run test:coverage # Run tests with coverage
 Create a `.env.local` file:
 ```env
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_CLUB_NAME="EHC Königsberg"
+NEXT_PUBLIC_CLUB_NAME="EHC Koenigsbrunn"
 ```
 
 ### Customization
@@ -541,6 +541,6 @@ npm start
 
 ---
 
-**Built with ❤️ for EHC Königsberg**
+**Built with ❤️ for EHC Koenigsbrunn**
 
 *Professional crowdfunding platform designed to connect businesses with sports excellence.*

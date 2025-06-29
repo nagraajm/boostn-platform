@@ -82,7 +82,7 @@ export default function PurchaseFormPage() {
   const packages = {
     classic: { name: 'CLASSIC', price: '€229' },
     bronze: { name: 'BRONZE', price: 'Contact for pricing' },
-    silver: { name: 'SILBER', price: 'Contact for pricing' },
+    silver: { name: 'SILVER', price: 'Contact for pricing' },
     gold: { name: 'GOLD', price: 'Contact for pricing' }
   };
 
@@ -139,7 +139,7 @@ export default function PurchaseFormPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-gray-800">EHC Königsberg</h1>
+              <h1 className="text-xl font-bold text-gray-800">EHC Koenigsbrunn</h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button
