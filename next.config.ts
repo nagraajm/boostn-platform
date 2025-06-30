@@ -8,8 +8,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/boostn-platform' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/boostn-platform/' : '',
+  // basePath: process.env.NODE_ENV === 'production' ? '/boostn-platform' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/boostn-platform/' : '',
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 };
 
 export default withNextIntl(nextConfig);

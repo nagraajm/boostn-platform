@@ -544,3 +544,12 @@ npm start
 **Built with ❤️ for EHC Koenigsbrunn**
 
 *Professional crowdfunding platform designed to connect businesses with sports excellence.*
+
+
+# Docker Deployment
+```bash
+docker build -t boostn-platform --target runner .
+docker run -p 3000:3000 boostn-platform
+docker tag boostn-platform:latest  kirpal2403/ehc-koenigsbrunn-website:1
+docker push kirpal2403/ehc-koenigsbrunn-website:1
+```
