@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/Card';
 import { Button } from '@/presentation/components/ui/Button';
+import { SocialShare } from '@/presentation/components/features/SocialShare';
 
 export default function SuccessPage() {
   const [locale, setLocale] = useState('en');
@@ -36,7 +37,9 @@ export default function SuccessPage() {
       ],
       backToHome: 'Back to Home Page',
       downloadReceipt: 'Download Receipt',
-      contactUs: 'Contact Us'
+      contactUs: 'Contact Us',
+      shareSuccess: 'Share Your Support',
+      shareText: 'Help us reach more supporters by sharing your contribution!'
     },
     de: {
       title: 'Kauf erfolgreich!',
@@ -52,7 +55,9 @@ export default function SuccessPage() {
       ],
       backToHome: 'Zurück zur Startseite',
       downloadReceipt: 'Quittung herunterladen',
-      contactUs: 'Kontakt aufnehmen'
+      contactUs: 'Kontakt aufnehmen',
+      shareSuccess: 'Teile deine Unterstützung',
+      shareText: 'Hilf uns, mehr Unterstützer zu erreichen, indem du deinen Beitrag teilst!'
     }
   };
 
@@ -179,6 +184,21 @@ export default function SuccessPage() {
                   {t.contactUs}
                 </Button>
               </div>
+
+              {/* Social Share Section */}
+              <Card className="p-6 text-center">
+                <CardContent>
+                  <h3 className="text-xl font-bold text-blue-900 mb-2 bg-blue-100 py-2 px-4 rounded-md inline-block">{t.shareSuccess}</h3>
+                  <p className="text-blue-700 mb-4">{t.shareText}</p>
+                  <SocialShare 
+                    key="package-success-share"
+                    title={`I just supported EHC Koenigsbrunn with the ${pkg?.name || 'sponsorship'} package!`}
+                    description="Join me in supporting our local ice hockey club. Every contribution helps them achieve excellence!"
+                    variant="button"
+                    size="lg"
+                  />
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/Card';
 import { Button } from '@/presentation/components/ui/Button';
+import { SocialShare } from '@/presentation/components/features/SocialShare';
 
 export default function PackagesPage() {
   const [locale, setLocale] = useState('en');
@@ -163,9 +164,20 @@ export default function PackagesPage() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4 gradient-text">
             {t.title}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             {t.subtitle}
           </p>
+          
+          {/* Social Share */}
+          <div className="flex justify-center">
+            <SocialShare 
+              key="packages-share"
+              title="Check out EHC Koenigsbrunn's Sponsorship Packages"
+              description="Support our local ice hockey club through various sponsorship opportunities. Every contribution helps us achieve excellence!"
+              variant="button"
+              size="md"
+            />
+          </div>
         </div>
       </section>
 

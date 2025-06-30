@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/Card';
 import { Button } from '@/presentation/components/ui/Button';
+import { SocialShare } from '@/presentation/components/features/SocialShare';
 
 export default function LocaleHomePage() {
   const pathname = usePathname();
@@ -29,6 +30,7 @@ export default function LocaleHomePage() {
       subtitle: 'Help us reach our goals and make a difference in our community. Every contribution matters.',
       explorePackages: 'Explore Packages',
       quickDonate: 'Quick Donate',
+      shareText: 'Share Our Campaign',
       packagesTitle: 'Sponsorship Packages',
       packagesSubtitle: 'Choose the perfect sponsorship package to support EHC Koenigsbrunn and gain valuable exposure for your business.',
       selectPackage: 'Select Package',
@@ -41,6 +43,7 @@ export default function LocaleHomePage() {
       subtitle: 'Hilf uns dabei, unsere Ziele zu erreichen und einen Unterschied in unserer Gemeinschaft zu machen. Jeder Beitrag zählt.',
       explorePackages: 'Pakete entdecken',
       quickDonate: 'Schnell spenden',
+      shareText: 'Teile unsere Kampagne',
       packagesTitle: 'Sponsoring-Pakete',
       packagesSubtitle: 'Wähle das perfekte Sponsoring-Paket zur Unterstützung des EHC Koenigsbrunn und gewinne wertvolle Präsenz für dein Unternehmen.',
       selectPackage: 'Paket auswählen',
@@ -104,7 +107,7 @@ export default function LocaleHomePage() {
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
             {t.subtitle}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               variant="primary" 
               size="lg"
@@ -121,6 +124,18 @@ export default function LocaleHomePage() {
             >
               {t.quickDonate}
             </Button>
+          </div>
+          
+          {/* Social Share Section */}
+          <div className="mt-8 flex flex-col items-center">
+            <p className="text-gray-200 mb-4 text-sm">{t.shareText}</p>
+            <SocialShare 
+              key="home-share"
+              title="Support EHC Koenigsbrunn"
+              description="Help our ice hockey club achieve excellence through sponsorship and donations"
+              variant="button"
+              size="md"
+            />
           </div>
         </div>
       </section>

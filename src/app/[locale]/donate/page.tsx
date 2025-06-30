@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/presentation/components/ui/Card';
 import { Button } from '@/presentation/components/ui/Button';
+import { SocialShare } from '@/presentation/components/features/SocialShare';
 
 export default function DonatePage() {
   const [locale, setLocale] = useState('en');
@@ -92,7 +93,9 @@ export default function DonatePage() {
         'You will receive a thank you email with your donation receipt',
         'Your name will be added to our supporters list (if you agreed)',
         'You\'ll receive updates about how your donation is making a difference'
-      ]
+      ],
+      shareSuccess: 'Share Your Support',
+      shareText: 'Help us reach more supporters by sharing your contribution!'
     },
     de: {
       title: 'Schnell Spenden',
@@ -117,7 +120,9 @@ export default function DonatePage() {
         'Sie erhalten eine Dankesmail mit Ihrer Spendenquittung',
         'Ihr Name wird in unsere Unterstützerliste aufgenommen (falls Sie zugestimmt haben)',
         'Sie erhalten Updates darüber, wie Ihre Spende einen Unterschied macht'
-      ]
+      ],
+      shareSuccess: 'Teile deine Unterstützung',
+      shareText: 'Hilf uns, mehr Unterstützer zu erreichen, indem du deinen Beitrag teilst!'
     }
   };
 
@@ -393,6 +398,21 @@ export default function DonatePage() {
                       {t.backToHome}
                     </Button>
                   </div>
+
+                  {/* Social Share Section */}
+                  <Card className="p-6 text-center bg-gradient-to-br from-blue-50 to-white border border-blue-200/30 rounded-xl shadow-lg">
+                    <CardContent>
+                      <h3 className="text-xl font-bold text-blue-900 mb-2">{t.shareSuccess}</h3>
+                      <p className="text-blue-700 mb-4">{t.shareText}</p>
+                      <SocialShare 
+                        key="donation-success-share"
+                        title={`I just donated €${selectedAmount || customAmount} to support EHC Koenigsbrunn!`}
+                        description="Join me in supporting our local ice hockey club. Every donation helps them achieve excellence!"
+                        variant="button"
+                        size="lg"
+                      />
+                    </CardContent>
+                  </Card>
                 </div>
               </CardContent>
             </Card>

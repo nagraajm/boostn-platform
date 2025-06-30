@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 import { cn } from '@/shared/utils/cn'
@@ -11,9 +13,10 @@ interface ModalProps {
   children: React.ReactNode
   title?: string
   size?: 'sm' | 'md' | 'lg' | 'xl'
+  zIndex?: number
 }
 
-export function Modal({ isOpen, onClose, children, title, size = 'md' }: ModalProps) {
+export function Modal({ isOpen, onClose, children, title, size = 'md', zIndex = 50 }: ModalProps) {
   const sizeClasses = {
     sm: 'max-w-sm',
     md: 'max-w-md',
@@ -21,7 +24,27 @@ export function Modal({ isOpen, onClose, children, title, size = 'md' }: ModalPr
     xl: 'max-w-xl',
   }
 
-  return (
+  // Handle ESC key press
+  useEffect(() => {
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isOpen) {
+        onClose()
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleEscKey)
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = 'hidden'
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey)
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen, onClose])
+
+  const modalContent = (
     <AnimatePresence>
       {isOpen && (
         <>
@@ -31,31 +54,32 @@ export function Modal({ isOpen, onClose, children, title, size = 'md' }: ModalPr
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+            className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-${zIndex}`}
+            style={{ zIndex: zIndex * 10 }}
           />
           
           {/* Modal */}
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className={`fixed inset-0 z-${zIndex} flex items-center justify-center p-4`} style={{ zIndex: zIndex * 10 + 1 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               className={cn(
-                'glass-modal text-white w-full',
+                'bg-white border border-gray-200 rounded-xl shadow-2xl text-gray-900 w-full',
                 sizeClasses[size]
               )}
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
               {title && (
-                <div className="flex items-center justify-between p-6 border-b border-white/20">
-                  <h2 className="text-xl font-semibold text-white text-shadow">{title}</h2>
+                <div className="flex items-center justify-between p-6 border-b border-gray-200">
+                  <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
                   <Button
                     variant="ghost"
                     size="icon"
                     onClick={onClose}
-                    className="h-6 w-6 hover:bg-white/10 text-white"
+                    className="h-8 w-8 hover:bg-gray-100 text-gray-500 hover:text-gray-700 rounded-full"
                   >
                     <X className="h-4 w-4" />
                   </Button>
@@ -72,4 +96,11 @@ export function Modal({ isOpen, onClose, children, title, size = 'md' }: ModalPr
       )}
     </AnimatePresence>
   )
+
+  // Render modal using portal to avoid nesting issues
+  if (typeof window !== 'undefined') {
+    return createPortal(modalContent, document.body)
+  }
+
+  return null
 }
